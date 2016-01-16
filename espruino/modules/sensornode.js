@@ -1,4 +1,4 @@
-/* Sensor Node S pins */
+/* Will be removed, switched to files specific to board */
 exports = {
   A:{
       A1:A4,
