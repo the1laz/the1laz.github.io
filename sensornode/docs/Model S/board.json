@@ -1,0 +1,125 @@
+{
+  "shape": {
+    "elements": [{
+      "type": "path",
+      "d":[{"x":40,"y":0},{"x":40,"y":0},
+        {"x":360,"y":0},{"x":360,"y":0},
+        {"x":389,"y":11},
+        {"x":400,"y":40},{"x":400,"y":40},
+        {"x":400,"y":360},{"x":400,"y":360},
+        {"x":389,"y":389},
+        {"x":360,"y":400},{"x":360,"y":400},
+        {"x":40,"y":400},{"x":40,"y":400},
+        {"x":11,"y":389},
+        {"x":0,"y":360},{"x":0,"y":360},
+        {"x":0,"y":40},{"x":0,"y":40},
+        {"x":11,"y":11}],
+      "fill":"green",
+      "stroke":"black",
+      "stroke-width":0,
+      "interpolate":"basis-closed"
+      },
+      {
+        "type": "circle",
+        "cx": 40,
+        "cy": 40,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "type": "circle",
+        "cx": 360,
+        "cy": 40,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "type": "circle",
+        "cx": 360,
+        "cy": 360,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "type": "circle",
+        "cx": 40,
+        "cy": 360,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "type":"rect",
+        "x":190,
+        "y":180,
+        "width":100,
+        "height":100,
+        "fill":"#444"
+      },
+      {
+        "type":"rect",
+        "x":76.5,
+        "y":14.6,
+        "width":127,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "type":"rect",
+        "x":254.3,
+        "y":14.6,
+        "width":50.8,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "type":"rect",
+        "x":196.5,
+        "y":334.6,
+        "width":127,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "type":"rect",
+        "x":94.9,
+        "y":334.6,
+        "width":50.8,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "type":"rect",
+        "x":15.3,
+        "y":237.8,
+        "width":25.4,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "type":"rect",
+        "x":334.6,
+        "y":181.5,
+        "width":50.8,
+        "height":127,
+        "fill":"#222"
+      },
+      {
+        "type":"rect",
+        "x":192.6,
+        "y":101.3,
+        "width":101.6,
+        "height":25.4,
+        "fill":"#222"
+      }
+    ]
+  },
+  "pins": [
+      {"x":205.3,"y":114.0,"angle":120,"labels":[{"value":"B7","type":"Pin"},{"value":"USART1 RX","type":"Serial"}]},
+      {"x":230.7,"y":114.0,"angle":120,"labels":[{"value":"B6","type":"Pin"},{"value":"USART1 TX","type":"Serial"}]},
+      {"x":256.1,"y":114.0,"angle":120,"labels":[{"value":"A14","type":"Pin"},{"value":"SWCLK","type":"Prog"}]},
+      {"x":281.5,"y":114.0,"angle":120,"labels":[{"value":"A13","type":"Pin"},{"value":"SWDIO","type":"Prog"}]},
+
+      {"x":89.2,"y":27.3,"angle":270,"labels":[{"value":"A13","type":"Pin"},{"value":"SWDIO","type":"Prog"}]}
+
+  ]
+}

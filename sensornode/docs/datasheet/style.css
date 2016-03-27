@@ -1,0 +1,21 @@
+.pin g rect{
+  stroke:black;
+  fill:#aaa;
+}
+
+.pin .pin-Pin rect{
+  stroke:black;
+  fill:white;
+}
+.pin .pin-SPI rect{
+  stroke:black;
+  fill:pink;
+}
+.pin .pin-Serial rect{
+  stroke:black;
+  fill:blue;
+}
+.pin .pin-Prog rect{
+  stroke:black;
+  fill:purple;
+}
