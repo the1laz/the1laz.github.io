@@ -1,3 +1,6 @@
+.pin text {
+  font-size:14px;
+}
 .pin g rect{
   stroke:black;
   fill:#aaa;
@@ -13,9 +16,9 @@
 }
 .pin .pin-Serial rect{
   stroke:black;
-  fill:blue;
+  fill:cyan;
 }
 .pin .pin-Prog rect{
   stroke:black;
-  fill:purple;
+  fill:#dd77dd;
 }
