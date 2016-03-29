@@ -143,8 +143,8 @@ function addText(svg,pins) {
 
   .attr("transform",function(d){return "translate("+(d.x+100)+","+(d.y+100)+") rotate("+d.angle+")"});
   sel.append("rect")
-  .attr("width",8)
-  .attr("height",8)
+  .attr("width",7)
+  .attr("height",7)
   .attr("x",-4)
   .attr("y",-4)
   .attr("fill","red")
@@ -180,16 +180,44 @@ var get = {};
 
 //if(typeof get.board != "undefined") {
 
-var svg = d3.select("body")
-  .append("svg")
-  .attr("width", w)
-  .attr("height", h);
 //var element = json.shape.elements[0];
 d3.json('board.json',function(error, response) {
 //d3.json('../'+get.board+'/board.json',function(error, response) {
   if (error) return console.warn(error);
   data = response;
+  d3.select("body")
+    .append("H1")
+    .html(data.name + " " + data.type);
+  d3.select("body").append("hr");
+  var svg = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", h);
   document.title = data.name + " - Datasheet"
   draw(svg,data.shape.elements);
   addText(svg,data.pins);
+  d3.select("body").append("hr");
+  var table = d3.select("body")
+  .append("table")
+  .append("tbody")
+  .selectAll("tr")
+  .data(data.info)
+  .enter()
+  .append("tr")
+  .selectAll("td")
+  .data(function(item){return item})
+  .enter()
+  .append("td")
+  .html(function(d){return d});
 });
+
+
+// {
+//
+//   "label":"chipset",
+//   "value":"STM32F401"
+// },
+// {
+//   "label":"voltage",
+//   "value":"???"
+// }

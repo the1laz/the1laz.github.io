@@ -1,7 +1,33 @@
 {
   "name":"Model S",
   "type":"Sensornode",
-  "chipset":"STM32F401",
+  "info":[
+      [
+        "Chipset",
+        "STM32F401RCT6"
+      ],
+      [
+        "Operating Voltage",
+        "3.3V"
+      ],
+      [
+        "VDD Range",
+        "1.7 to 3.6 V"
+      ],
+      [
+        "VBUS Range",
+        "2.7 to 16 V"
+      ],
+      [
+        "Flash",
+        "256 MB"
+      ],
+      [
+        "RAM",
+        "64 MB"
+      ]
+
+  ],
   "shape": {
     "elements": [{
       "type": "path",
@@ -117,54 +143,54 @@
     ]
   },
   "pins": [
-      {"x":205.3,"y":114.0,"angle":90,"labels":[{"value":"B7","type":"Pin"},{"value":"USART1 RX","type":"Serial"}]},
-      {"x":230.7,"y":114.0,"angle":90,"labels":[{"value":"B6","type":"Pin"},{"value":"USART1 TX","type":"Serial"}]},
-      {"x":256.1,"y":114.0,"angle":90,"labels":[{"value":"A14","type":"Pin"},{"value":"SWCLK","type":"Prog"}]},
-      {"x":281.5,"y":114.0,"angle":90,"labels":[{"value":"A13","type":"Pin"},{"value":"SWDIO","type":"Prog"}]},
+      {"x":205.3,"y":114.0,"angle":135,"labels":[{"value":"B7","type":"Pin"},{"value":"USART1 RX","type":"Serial"},{"value":"I2C1 SDA","type":"I2C"},{"value":"PWM","type":"PWM"}]},
+      {"x":230.7,"y":114.0,"angle":135,"labels":[{"value":"B6","type":"Pin"},{"value":"USART1 TX","type":"Serial"},{"value":"I2C1 SCL","type":"I2C"},{"value":"PWM","type":"PWM"}]},
+      {"x":256.1,"y":114.0,"angle":225,"labels":[{"value":"A14","type":"Pin"},{"value":"SWCLK","type":"SWD"}]},
+      {"x":281.5,"y":114.0,"angle":225,"labels":[{"value":"A13","type":"Pin"},{"value":"SWDIO","type":"SWD"}]},
 
-      {"x":28,"y":263.2,"angle":180,"labels":[{"value":"A2","type":"Pin"},{"value":"USART2 RX","type":"Serial"}]},
-      {"x":28,"y":288.6,"angle":180,"labels":[{"value":"A3","type":"Pin"},{"value":"USART2 TX","type":"Serial"}]},
+      {"x":28,"y":263.2,"angle":225,"labels":[{"value":"A2","type":"Pin"},{"value":"USART2 RX","type":"Serial"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":28,"y":288.6,"angle":225,"labels":[{"value":"A3","type":"Pin"},{"value":"USART2 TX","type":"Serial"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
 
-      {"x":89.2,"y":27.3,"angle":270,"labels":[{"value":"A0","type":"Pin"},{"value":"INT","type":"Pin"}]},
-      {"x":114.6,"y":27.3,"angle":270,"labels":[{"value":"A1","type":"Pin"},{"value":"COM","type":"Pin"}]},
-      {"x":140,"y":27.3,"angle":270,"labels":[{"value":"C3","type":"Pin"},{"value":"B.A1","type":"Pin"}]},
-      {"x":165.4,"y":27.3,"angle":270,"labels":[{"value":"C2","type":"Pin"},{"value":"B.A2","type":"Pin"}]},
-      {"x":190.8,"y":27.3,"angle":270,"labels":[{"value":"B3","type":"Pin"},{"value":"B.D2","type":"Pin"}]},
-      {"x":89.2,"y":52.7,"angle":120,"labels":[{"value":"GND","type":"Pin"}]},
-      {"x":114.6,"y":52.7,"angle":120,"labels":[{"value":"VDD","type":"Pin"}]},
-      {"x":140,"y":52.7,"angle":120,"labels":[{"value":"B8","type":"Pin"},{"value":"B.SCL","type":"Pin"}]},
-      {"x":165.4,"y":52.7,"angle":120,"labels":[{"value":"B9","type":"Pin"},{"value":"B.SDA","type":"Pin"}]},
-      {"x":190.8,"y":52.7,"angle":120,"labels":[{"value":"A10","type":"Pin"},{"value":"B.D1","type":"Pin"}]},
+      {"x":89.2,"y":27.3,"angle":315,"labels":[{"value":"A0","type":"Pin"},{"value":"INT","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":114.6,"y":27.3,"angle":315,"labels":[{"value":"A1","type":"Pin"},{"value":"COM","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":140,"y":27.3,"angle":315,"labels":[{"value":"C3","type":"Pin"},{"value":"B.A1","type":"Pin"},{"value":"SPI2 MOSI","type":"SPI"},{"value":"ADC","type":"ADC"}]},
+      {"x":165.4,"y":27.3,"angle":315,"labels":[{"value":"C2","type":"Pin"},{"value":"B.A2","type":"Pin"},{"value":"SPI2 MISO","type":"SPI"},{"value":"ADC","type":"ADC"}]},
+      {"x":190.8,"y":27.3,"angle":335,"labels":[{"value":"B3","type":"Pin"},{"value":"B.D2","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"SPI3 SCK","type":"SPI"},{"value":"SPI1 SCK","type":"SPI"},{"value":"I2C2 SDA","type":"I2C"}]},
+      {"x":89.2,"y":52.7,"angle":135,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":114.6,"y":52.7,"angle":135,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":140,"y":52.7,"angle":135,"labels":[{"value":"B8","type":"Pin"},{"value":"I2C1 SCL","type":"I2C"},{"value":"PWM","type":"PWM"}]},
+      {"x":165.4,"y":52.7,"angle":135,"labels":[{"value":"B9","type":"Pin"},{"value":"I2C1 SDA","type":"I2C"},{"value":"PWM","type":"PWM"}]},
+      {"x":190.8,"y":52.7,"angle":135,"labels":[{"value":"A10","type":"Pin"},{"value":"B.D1","type":"Pin"},{"value":"USART1 RX","type":"Serial"},{"value":"PWM","type":"PWM"}]},
 
-      {"x":310.8,"y":372.7,"angle":90,"labels":[{"value":"A0","type":"Pin"},{"value":"INT","type":"Pin"}]},
-      {"x":285.4,"y":372.7,"angle":90,"labels":[{"value":"A1","type":"Pin"},{"value":"COM","type":"Pin"}]},
-      {"x":260,"y":372.7,"angle":90,"labels":[{"value":"C3","type":"Pin"},{"value":"A.A1","type":"Pin"}]},
-      {"x":234.6,"y":372.7,"angle":90,"labels":[{"value":"C2","type":"Pin"},{"value":"A.A2","type":"Pin"}]},
-      {"x":209.2,"y":372.7,"angle":90,"labels":[{"value":"B3","type":"Pin"},{"value":"A.D2","type":"Pin"}]},
-      {"x":310.8,"y":347.3,"angle":0,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":310.8,"y":372.7,"angle":135,"labels":[{"value":"A0","type":"Pin"},{"value":"INT","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":285.4,"y":372.7,"angle":135,"labels":[{"value":"A1","type":"Pin"},{"value":"COM","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":260,"y":372.7,"angle":135,"labels":[{"value":"A4","type":"Pin"},{"value":"A.A1","type":"Pin"},{"value":"ADC","type":"ADC"}]},
+      {"x":234.6,"y":372.7,"angle":145,"labels":[{"value":"A6","type":"Pin"},{"value":"A.A2","type":"Pin"},{"value":"SPI1 MISO","type":"SPI"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":209.2,"y":372.7,"angle":155,"labels":[{"value":"A7","type":"Pin"},{"value":"A.D2","type":"Pin"},{"value":"SPI1 MOSI","type":"SPI"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":310.8,"y":347.3,"angle":270,"labels":[{"value":"GND","type":"Pin"}]},
       {"x":285.4,"y":347.3,"angle":270,"labels":[{"value":"VDD","type":"Pin"}]},
-      {"x":260,"y":347.3,"angle":270,"labels":[{"value":"B8","type":"Pin"},{"value":"A.SCL","type":"Pin"}]},
-      {"x":234.6,"y":347.3,"angle":270,"labels":[{"value":"B9","type":"Pin"},{"value":"A.SDA","type":"Pin"}]},
-      {"x":209.2,"y":347.3,"angle":270,"labels":[{"value":"A10","type":"Pin"},{"value":"A.D1","type":"Pin"}]},
+      {"x":260,"y":347.3,"angle":270,"labels":[{"value":"B8","type":"Pin"},{"value":"I2C1 SCL","type":"I2C"},{"value":"PWM","type":"PWM"}]},
+      {"x":234.6,"y":347.3,"angle":270,"labels":[{"value":"B9","type":"Pin"},{"value":"I2C1 SDA","type":"I2C"},{"value":"PWM","type":"PWM"}]},
+      {"x":209.2,"y":347.3,"angle":270,"labels":[{"value":"A5","type":"Pin"},{"value":"A.D1","type":"Pin"},{"value":"SPI1 SCK","type":"SPI"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
 
-      {"x":347.3,"y":194.2,"angle":270,"labels":[{"value":"B12","type":"Pin"},{"value":"SS","type":"Pin"}]},
-      {"x":347.3,"y":219.6,"angle":150,"labels":[{"value":"A0","type":"Pin"},{"value":"INT","type":"Pin"}]},
-      {"x":347.3,"y":245.0,"angle":150,"labels":[{"value":"B15","type":"Pin"}]},
-      {"x":347.3,"y":270.4,"angle":150,"labels":[{"value":"B1","type":"Pin"}]},
-      {"x":347.3,"y":295.8,"angle":150,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":347.3,"y":194.2,"angle":225,"labels":[{"value":"B12","type":"Pin"},{"value":"SS","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":347.3,"y":219.6,"angle":225,"labels":[{"value":"A0","type":"Pin"},{"value":"INT","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":347.3,"y":245.0,"angle":225,"labels":[{"value":"B15","type":"Pin"},{"value":"SPI2 MOSI","type":"SPI"},{"value":"PWM","type":"PWM"}]},
+      {"x":347.3,"y":270.4,"angle":225,"labels":[{"value":"B1","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
+      {"x":347.3,"y":295.8,"angle":225,"labels":[{"value":"VDD","type":"Pin"}]},
       {"x":372.7,"y":194.2,"angle":0,"labels":[{"value":"NRST","type":"Pin"}]},
-      {"x":372.7,"y":219.6,"angle":0,"labels":[{"value":"B14","type":"Pin"}]},
-      {"x":372.7,"y":245.0,"angle":0,"labels":[{"value":"B13","type":"Pin"}]},
-      {"x":372.7,"y":270.4,"angle":0,"labels":[{"value":"B0","type":"Pin"}]},
+      {"x":372.7,"y":219.6,"angle":0,"labels":[{"value":"B14","type":"Pin"},{"value":"SPI2 MISO","type":"SPI"},{"value":"PWM","type":"PWM"}]},
+      {"x":372.7,"y":245.0,"angle":0,"labels":[{"value":"B13","type":"Pin"},{"value":"SPI2 SCK","type":"SPI"},{"value":"PWM","type":"PWM"}]},
+      {"x":372.7,"y":270.4,"angle":0,"labels":[{"value":"B0","type":"Pin"},{"value":"PWM","type":"PWM"},{"value":"ADC","type":"ADC"}]},
       {"x":372.7,"y":295.8,"angle":0,"labels":[{"value":"GND","type":"Pin"}]},
 
-      {"x":267,"y":27.3,"angle":270,"labels":[{"value":"VBUS","type":"Pin"}]},
-      {"x":292.4,"y":27.3,"angle":270,"labels":[{"value":"GND","type":"Pin"}]},
-      {"x":267,"y":52.7,"angle":180,"labels":[{"value":"VBAT","type":"Pin"}]},
-      {"x":292.4,"y":52.7,"angle":0,"labels":[{"value":"VCOM","type":"Pin"}]},
+      {"x":267,"y":27.3,"angle":315,"labels":[{"value":"VBUS","type":"Pin"}]},
+      {"x":292.4,"y":27.3,"angle":315,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":267,"y":52.7,"angle":45,"labels":[{"value":"VBAT","type":"Pin"}]},
+      {"x":292.4,"y":52.7,"angle":45,"labels":[{"value":"VCOM","type":"Pin"}]},
 
-      {"x":107.6,"y":372.7,"angle":90,"labels":[{"value":"VCOM","type":"Pin"}]},
-      {"x":133,"y":372.7,"angle":90,"labels":[{"value":"VBAT","type":"Pin"}]},
+      {"x":107.6,"y":372.7,"angle":135,"labels":[{"value":"VCOM","type":"Pin"}]},
+      {"x":133,"y":372.7,"angle":135,"labels":[{"value":"VBAT","type":"Pin"}]},
       {"x":107.6,"y":347.3,"angle":270,"labels":[{"value":"GND","type":"Pin"}]},
       {"x":133,"y":347.3,"angle":270,"labels":[{"value":"VBUS","type":"Pin"}]}
 

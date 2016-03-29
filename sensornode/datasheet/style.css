@@ -1,5 +1,23 @@
+H1 {
+  color: black;
+  text-align: center;
+}
+
+SVG {
+  display:block;
+  margin:auto;
+}
+
+TABLE {
+  width: 400px;
+  margin:auto;
+  border-collapse: collapse;
+}
+TABLE,TH,TD {
+  border:1px solid black;
+}
 .pin text {
-  font-size:14px;
+  font-size:12px;
 }
 .pin g rect{
   stroke:black;
@@ -12,13 +30,25 @@
 }
 .pin .pin-SPI rect{
   stroke:black;
+  fill:orange;
+}
+.pin .pin-I2C rect{
+  stroke:black;
+  fill:#66ff66;
+}
+.pin .pin-ADC rect{
+  stroke:black;
   fill:pink;
+}
+.pin .pin-PWM rect{
+  stroke:black;
+  fill:yellow;
 }
 .pin .pin-Serial rect{
   stroke:black;
   fill:cyan;
 }
-.pin .pin-Prog rect{
+.pin .pin-SWD rect{
   stroke:black;
   fill:#dd77dd;
 }
