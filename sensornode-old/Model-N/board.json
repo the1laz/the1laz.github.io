@@ -1,0 +1,201 @@
+{
+  "name":"Model N",
+  "type":"Sensornode",
+  "info":[
+      [
+        "Chipset",
+        "NRF51822"
+      ],
+      [
+        "Operating Voltage",
+        "3.3V"
+      ],
+      [
+        "VDD Range",
+        "1.8 to 5.5 V"
+      ],
+      [
+        "VBUS Range",
+        "No regulator onboard"
+      ],
+      [
+        "Flash",
+        "256 KB"
+      ],
+      [
+        "RAM",
+        "16 KB"
+      ]
+
+  ],
+  "shape": {
+    "elements": [{
+      "name":"outline",
+      "type": "path",
+      "d":[{"x":40,"y":0},{"x":40,"y":0},
+        {"x":360,"y":0},{"x":360,"y":0},
+        {"x":389,"y":11},
+        {"x":400,"y":40},{"x":400,"y":40},
+        {"x":400,"y":360},{"x":400,"y":360},
+        {"x":389,"y":389},
+        {"x":360,"y":400},{"x":360,"y":400},
+        {"x":40,"y":400},{"x":40,"y":400},
+        {"x":11,"y":389},
+        {"x":0,"y":360},{"x":0,"y":360},
+        {"x":0,"y":40},{"x":0,"y":40},
+        {"x":11,"y":11}],
+      "fill":"green",
+      "stroke":"black",
+      "stroke-width":0,
+      "interpolate":"basis-closed"
+      },
+      {
+        "name":"top-left-hole",
+        "type": "circle",
+        "cx": 40,
+        "cy": 40,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"top-right-hole",
+        "type": "circle",
+        "cx": 360,
+        "cy": 40,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"bottom-right-hole",
+        "type": "circle",
+        "cx": 360,
+        "cy": 360,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"bottom-left-hole",
+        "type": "circle",
+        "cx": 40,
+        "cy": 360,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"mcu",
+        "type":"rect",
+        "x":33,
+        "y":97,
+        "width":350,
+        "height":60,
+        "fill":"#444"
+      },
+      {
+        "name":"port-b",
+        "type":"rect",
+        "x":76.5,
+        "y":14.6,
+        "width":127,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "name":"port-b-power",
+        "type":"rect",
+        "x":254.3,
+        "y":14.6,
+        "width":50.8,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "name":"port-a",
+        "type":"rect",
+        "x":196.5,
+        "y":334.6,
+        "width":127,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "name":"port-a-power",
+        "type":"rect",
+        "x":94.9,
+        "y":334.6,
+        "width":50.8,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "name":"usart-port",
+        "type":"rect",
+        "x":15.3,
+        "y":174.3,
+        "width":25.4,
+        "height":152.4,
+        "fill":"#222"
+      },
+      {
+        "name":"spi-port",
+        "type":"rect",
+        "x":334.6,
+        "y":181.5,
+        "width":50.8,
+        "height":127,
+        "fill":"#222"
+      }
+    ]
+  },
+  "pins": [
+      {"x":28,"y":187.0,"angle":0,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":28,"y":212.4,"angle":0,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":28,"y":237.8,"angle":0,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":28,"y":263.2,"angle":0,"labels":[{"value":"D0","type":"Pin"},{"value":"USART1 RX","type":"Serial"}]},
+      {"x":28,"y":288.6,"angle":0,"labels":[{"value":"D1","type":"Pin"},{"value":"USART1 TX","type":"Serial"}]},
+      {"x":28,"y":314.0,"angle":0,"labels":[{"value":"DTR","type":"Pin"}]},
+
+      {"x":89.2,"y":27.3,"angle":315,"labels":[{"value":"D2","type":"Pin"},{"value":"INT","type":"Pin"},{"value":"INT0","type":"INT"}]},
+      {"x":114.6,"y":27.3,"angle":315,"labels":[{"value":"D6","type":"Pin"},{"value":"COM","type":"Pin"},{"value":"AIN0","type":"AIN"},{"value":"PWM","type":"PWM"}]},
+      {"x":140,"y":27.3,"angle":315,"labels":[{"value":"A2","type":"Pin"},{"value":"B.A1","type":"Pin"},{"value":"ADC","type":"ADC"}]},
+      {"x":165.4,"y":27.3,"angle":315,"labels":[{"value":"A3","type":"Pin"},{"value":"B.A2","type":"Pin"},{"value":"ADC","type":"ADC"}]},
+      {"x":190.8,"y":27.3,"angle":315,"labels":[{"value":"D9","type":"Pin"},{"value":"B.D2","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":89.2,"y":52.7,"angle":90,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":114.6,"y":52.7,"angle":90,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":140,"y":52.7,"angle":90,"labels":[{"value":"A5","type":"Pin"},{"value":"I2C1 SCL","type":"I2C"},{"value":"ADC","type":"ADC"}]},
+      {"x":165.4,"y":52.7,"angle":90,"labels":[{"value":"A4","type":"Pin"},{"value":"I2C1 SDA","type":"I2C"},{"value":"ADC","type":"ADC"}]},
+      {"x":190.8,"y":52.7,"angle":90,"labels":[{"value":"D5","type":"Pin"},{"value":"B.D1","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+
+      {"x":310.8,"y":372.7,"angle":135,"labels":[{"value":"D2","type":"Pin"},{"value":"INT","type":"Pin"},{"value":"INT0","type":"INT"}]},
+      {"x":285.4,"y":372.7,"angle":135,"labels":[{"value":"D6","type":"Pin"},{"value":"COM","type":"Pin"},{"value":"AIN0","type":"AIN"},{"value":"PWM","type":"PWM"}]},
+      {"x":260,"y":372.7,"angle":135,"labels":[{"value":"A0","type":"Pin"},{"value":"A.A1","type":"Pin"},{"value":"ADC","type":"ADC"}]},
+      {"x":234.6,"y":372.7,"angle":135,"labels":[{"value":"A1","type":"Pin"},{"value":"A.A2","type":"Pin"},{"value":"ADC","type":"ADC"}]},
+      {"x":209.2,"y":372.7,"angle":135,"labels":[{"value":"D3","type":"Pin"},{"value":"A.D2","type":"Pin"},{"value":"INT1","type":"INT"},{"value":"PWM","type":"PWM"}]},
+      {"x":310.8,"y":347.3,"angle":270,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":285.4,"y":347.3,"angle":270,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":260,"y":347.3,"angle":270,"labels":[{"value":"A5","type":"Pin"},{"value":"I2C1 SCL","type":"I2C"},{"value":"ADC","type":"ADC"}]},
+      {"x":234.6,"y":347.3,"angle":270,"labels":[{"value":"A4","type":"Pin"},{"value":"I2C1 SDA","type":"I2C"},{"value":"ADC","type":"ADC"}]},
+      {"x":209.2,"y":347.3,"angle":270,"labels":[{"value":"D8","type":"Pin"},{"value":"A.D1","type":"Pin"}]},
+
+      {"x":347.3,"y":194.2,"angle":225,"labels":[{"value":"D10","type":"Pin"},{"value":"SPI1 SS","type":"SPI"},{"value":"PWM","type":"PWM"}]},
+      {"x":347.3,"y":219.6,"angle":225,"labels":[{"value":"D2","type":"Pin"},{"value":"INT","type":"Pin"},{"value":"INT0","type":"INT"}]},
+      {"x":347.3,"y":245.0,"angle":225,"labels":[{"value":"D11","type":"Pin"},{"value":"SPI1 MOSI","type":"SPI"},{"value":"PWM","type":"PWM"}]},
+      {"x":347.3,"y":270.4,"angle":225,"labels":[{"value":"D7","type":"Pin"}]},
+      {"x":347.3,"y":295.8,"angle":225,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":372.7,"y":194.2,"angle":0,"labels":[{"value":"RST","type":"Pin"}]},
+      {"x":372.7,"y":219.6,"angle":0,"labels":[{"value":"D12","type":"Pin"},{"value":"SPI1 MISO","type":"SPI"}]},
+      {"x":372.7,"y":245.0,"angle":0,"labels":[{"value":"D13","type":"Pin"},{"value":"SPI1 SCK","type":"SPI"}]},
+      {"x":372.7,"y":270.4,"angle":0,"labels":[{"value":"D4","type":"Pin"}]},
+      {"x":372.7,"y":295.8,"angle":0,"labels":[{"value":"GND","type":"Pin"}]},
+
+      {"x":267,"y":27.3,"angle":270,"labels":[{"value":"VBUS","type":"Pin"}]},
+      {"x":292.4,"y":27.3,"angle":270,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":267,"y":52.7,"angle":90,"labels":[{"value":"VBAT","type":"Pin"}]},
+      {"x":292.4,"y":52.7,"angle":90,"labels":[{"value":"VCOM","type":"Pin"}]},
+
+      {"x":107.6,"y":372.7,"angle":90,"labels":[{"value":"VCOM","type":"Pin"}]},
+      {"x":133,"y":372.7,"angle":90,"labels":[{"value":"VBAT","type":"Pin"}]},
+      {"x":107.6,"y":347.3,"angle":270,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":133,"y":347.3,"angle":270,"labels":[{"value":"VBUS","type":"Pin"}]}
+
+  ]
+}
