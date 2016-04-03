@@ -1,0 +1,163 @@
+{
+  "name":"Model E",
+  "type":"Sensornode",
+  "info":[
+      [
+        "Chipset",
+        "ESP8266"
+      ],
+      [
+        "Operating Voltage",
+        "3.3V"
+      ],
+      [
+        "VDD Range",
+        "3 to 3.6 V"
+      ],
+      [
+        "VBUS Range",
+        "No regulator onboard"
+      ],
+      [
+        "RAM",
+        "112 KB"
+      ],
+      [
+        "ROM",
+        "200 KB"
+      ]
+
+  ],
+  "shape": {
+    "elements": [{
+      "name":"outline",
+      "type": "path",
+      "d":[{"x":40,"y":0},{"x":40,"y":0},
+        {"x":360,"y":0},{"x":360,"y":0},
+        {"x":389,"y":11},
+        {"x":400,"y":40},{"x":400,"y":40},
+        {"x":400,"y":360},{"x":400,"y":360},
+        {"x":389,"y":389},
+        {"x":360,"y":400},{"x":360,"y":400},
+        {"x":40,"y":400},{"x":40,"y":400},
+        {"x":11,"y":389},
+        {"x":0,"y":360},{"x":0,"y":360},
+        {"x":0,"y":40},{"x":0,"y":40},
+        {"x":11,"y":11}],
+      "fill":"green",
+      "stroke":"black",
+      "stroke-width":0,
+      "interpolate":"basis-closed"
+      },
+      {
+        "name":"top-left-hole",
+        "type": "circle",
+        "cx": 40,
+        "cy": 40,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"top-right-hole",
+        "type": "circle",
+        "cx": 360,
+        "cy": 40,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"bottom-right-hole",
+        "type": "circle",
+        "cx": 360,
+        "cy": 360,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"bottom-left-hole",
+        "type": "circle",
+        "cx": 40,
+        "cy": 360,
+        "r": 17,
+        "fill": "#ffffff"
+      },
+      {
+        "name":"mcu-board",
+        "type":"rect",
+        "x":101.6,
+        "y":6.3,
+        "width":165.1,
+        "height":241.3,
+        "fill":"#007"
+      },
+      {
+        "name":"mcu",
+        "type":"rect",
+        "x":127,
+        "y":82.5,
+        "width":114.3,
+        "height":152.4,
+        "fill":"#aaa"
+      },
+      {
+        "name":"port-a",
+        "type":"rect",
+        "x":196.5,
+        "y":334.6,
+        "width":127,
+        "height":50.8,
+        "fill":"#222"
+      },
+      {
+        "name":"usart-port",
+        "type":"rect",
+        "x":15.3,
+        "y":174.3,
+        "width":25.4,
+        "height":152.4,
+        "fill":"#222"
+      },
+      {
+        "name":"spi-port",
+        "type":"rect",
+        "x":334.6,
+        "y":181.5,
+        "width":50.8,
+        "height":127,
+        "fill":"#222"
+      }
+    ]
+  },
+  "pins": [
+      {"x":28,"y":187.0,"angle":0,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":28,"y":212.4,"angle":0,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":28,"y":237.8,"angle":0,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":28,"y":263.2,"angle":0,"labels":[{"value":"D3","type":"Pin"},{"value":"USART1 RX","type":"Serial"},{"value":"PWM","type":"PWM"}]},
+      {"x":28,"y":288.6,"angle":0,"labels":[{"value":"D1","type":"Pin"},{"value":"USART1 TX","type":"Serial"},{"value":"PWM","type":"PWM"}]},
+
+
+      {"x":310.8,"y":372.7,"angle":135,"labels":[{"value":"D16","type":"Pin"},{"value":"INT","type":"Pin"}]},
+      {"x":285.4,"y":372.7,"angle":135,"labels":[{"value":"D14","type":"Pin"},{"value":"COM","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":260,"y":372.7,"angle":135,"labels":[{"value":"ADC","type":"Pin"},{"value":"A.A1","type":"Pin"},{"value":"ADC","type":"ADC"}]},
+      {"x":234.6,"y":372.7,"angle":135,"labels":[{"value":"D15","type":"Pin"},{"value":"A.A1","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":209.2,"y":372.7,"angle":135,"labels":[{"value":"D13","type":"Pin"},{"value":"A.D2","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":310.8,"y":347.3,"angle":270,"labels":[{"value":"GND","type":"Pin"}]},
+      {"x":285.4,"y":347.3,"angle":270,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":260,"y":347.3,"angle":270,"labels":[{"value":"D5","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":234.6,"y":347.3,"angle":270,"labels":[{"value":"D4","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":209.2,"y":347.3,"angle":270,"labels":[{"value":"D12","type":"Pin"},{"value":"A.D1","type":"Pin"}]},
+
+      {"x":347.3,"y":194.2,"angle":225,"labels":[{"value":"D10","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":347.3,"y":219.6,"angle":225,"labels":[{"value":"D2","type":"Pin"},{"value":"INT","type":"Pin"}]},
+      {"x":347.3,"y":245.0,"angle":225,"labels":[{"value":"D11","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":347.3,"y":270.4,"angle":225,"labels":[{"value":"D7","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":347.3,"y":295.8,"angle":225,"labels":[{"value":"VDD","type":"Pin"}]},
+      {"x":372.7,"y":194.2,"angle":0,"labels":[{"value":"RST","type":"Pin"}]},
+      {"x":372.7,"y":219.6,"angle":0,"labels":[{"value":"D12","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":372.7,"y":245.0,"angle":0,"labels":[{"value":"D13","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":372.7,"y":270.4,"angle":0,"labels":[{"value":"D4","type":"Pin"},{"value":"PWM","type":"PWM"}]},
+      {"x":372.7,"y":295.8,"angle":0,"labels":[{"value":"GND","type":"Pin"}]}
+
+
+  ]
+}
